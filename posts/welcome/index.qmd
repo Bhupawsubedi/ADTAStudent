@@ -1,0 +1,10 @@
+---
+title: "Welcome To My Blog"
+author: "Bhupa Subedi"
+date: "2023-12-04"
+categories: [R]
+---
+
+Hello, I'm Bhupa Subedi, a University of North Texas student eagerly anticipating my December 2023 graduation. These transformative years have shaped my resilience and adaptability. As I stand on the brink of new beginnings, I'm excited to embrace the adventures and possibilities that lie ahead.
+
+![](thumbnail.jpg)

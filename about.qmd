@@ -1,0 +1,16 @@
+---
+title: "Bhupa Subedi"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+   
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/bhupa-subedi-219312201/
+    - icon: github
+      text: Github
+      href: https://github.com/Bhupawsubedi
+---
+
+About this blog

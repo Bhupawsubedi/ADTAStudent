@@ -1,0 +1,61 @@
+---
+title: "EDA"
+author: "Bhupa Subedi"
+date: "2023-12-07"
+categories: [R,EDA, analysis]
+image: "image.jpg"
+---
+
+Hi, Let's perform exploratory data analysis (EDA) on the "mtcars" dataset in RStudio.
+
+```{r, ECHO = TRUE}
+
+data(mtcars)
+
+
+head(mtcars)
+
+```
+
+```{r, echo=TRUE}
+summary(mtcars)
+
+```
+
+```{r, echo=TRUE}
+
+str(mtcars)
+```
+
+```{r, echo=TRUE}
+colnames(mtcars)
+```
+
+```{r,echo=TRUE}
+#Findning if dataset has the missing values
+sum(is.na(mtcars))
+```
+
+```{r,echo=TRUE}
+# Visualize the correlation matrix
+library(corrplot)
+correlation_matrix <- cor(mtcars)
+corrplot(correlation_matrix, method = "color")
+
+```
+
+```{r,echo=TRUE}
+
+
+# Find the variables with the highest absolute correlation with mpg
+mpg_correlation <- correlation_matrix["mpg", ]
+abs_correlation <- abs(mpg_correlation)
+
+# Sort in descending order
+sorted_correlation <- sort(abs_correlation, decreasing = TRUE)
+
+# Print the variables and their absolute correlation with mpg
+cat("Absolute Correlation with mpg:\n")
+cat(names(sorted_correlation), ": ", sorted_correlation, "\n")
+
+```
